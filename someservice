@@ -1,0 +1,11 @@
+[Unit]
+Description=myUnit
+After=network.target
+
+[Service]
+ExecStart=/home/scripts/script.sh
+PIDFile=/home/pid/some.pid
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
